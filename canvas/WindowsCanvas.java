@@ -41,7 +41,7 @@ public class WindowsCanvas extends Component implements Renderer
         
         for(int i =0; i<pixels.length; i++)
         {
-            graphics.setColor(new Color((int)pixels[i].b&0xff,(int)pixels[i].g&0xff, (int)pixels[i].r&0xff) );//(int)pixels[i].r&0xff, (int)pixels[i].g&0xff, (int)pixels[i].b&0xff)
+            graphics.setColor(new Color((int)pixels[i].b&0xff,(int)pixels[i].g&0xff, (int)pixels[i].r&0xff) );
             graphics.drawLine(pixels[i].x, pixels[i].y, pixels[i].x, pixels[i].y);
         }
     }
